@@ -13,14 +13,17 @@
   },
   "scripts": {
     "install": "webdriver-manager update",
-    "postinstall": "bower install",
+    "postinstall": "bower install && brunch build --optimize",
     "start": "brunch w -s",
     "dev": "brunch w",
     "prod": "brunch b -P",
     "test": "karma start test/karma.conf.js",
     "test-e2e": "protractor test/protractor-conf.js"
   },
-  "dependencies": {},
+  "dependencies": {
+  	"statik": ">= 1.1.0",
+	"brunch": "1.x"
+	},
   "devDependencies": {
     "bower": "~1.3.12",
     "brunch": "~1.7.20",
