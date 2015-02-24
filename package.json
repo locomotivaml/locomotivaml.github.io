@@ -1,0 +1,14 @@
+{
+  "name": "locomotiva-main-website",
+  "description": "locomotiva.ml main website",
+  "version": "0.0.1",
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.2.x"
+  },
+  "dependencies": {
+    "express": "3.x",
+    "zombie": "*",
+    "ejs": "*"
+  }
+}
