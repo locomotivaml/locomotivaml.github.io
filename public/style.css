@@ -73,7 +73,7 @@ label,
 	height: 90%;
 	top: 0;
 	left: 0;
-	position: fixed !important;
+	position: scroll !important;
 }
 
 .splash-container > .splash-background {
@@ -83,8 +83,7 @@ label,
 
 	z-index: 1;
 
-	/*background: url(/public/gif-bg.gif) rgba(1, 1, 1, 0.1) no-repeat;*/
-	background: rgba(1, 1, 1, 0.1) no-repeat;
+	background: url(/gif-bg.gif) rgba(1, 1, 1, 0.1) no-repeat;
 	background-size: cover;
 
 	-webkit-filter: blur(10px);
