@@ -1,15 +1,15 @@
-var app = function () {
-  var http = require('http');
-  var express = require('express');
-  var app = express();
+var express = require('express'),
+    exphbs  = require('express-handlebars');
 
-  app.set('views', __dirname + '/views');
-  app.engine('html', require('ejs').renderFile);
-  app.get('/', function(req, res) {
-    res.render('index.html');
-  });
+var app = express();
 
-  return app;
-}();
+app.engine('handlebars', exphbs({defaultLayout: 'main'}));
+app.set('view engine', 'handlebars');
+
+app.get('/', function (req, res) {
+    res.render('home');
+});
+
+app.listen(3000);
 
 module.exports = app;
