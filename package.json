@@ -7,8 +7,12 @@
     "npm": "1.2.x"
   },
   "dependencies": {
+    "bower": "^1.3.12",
+    "ejs": "*",
     "express": "3.x",
-    "zombie": "*",
-    "ejs": "*"
+    "zombie": "*"
+  },
+  "scripts": {
+    "postinstall": "bower install"
   }
 }
