@@ -6,7 +6,7 @@ var app = express();
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 
-app.use('/public', express.static(__dirname + '/public'))
+app.use(express.static(process.cwd() + '/public'));
 app.use('/vendor', express.static(__dirname + '/bower_components'));
 
 
