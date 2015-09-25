@@ -1,5 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Quattrocento:400,700);
-@import url(http://fonts.googleapis.com/css?family=Oswald:400,700);
+@import url(//fonts.googleapis.com/css?family=Quattrocento:400,700);
+@import url(//fonts.googleapis.com/css?family=Oswald:400,700);
 /*font-family: 'Quattrocento', serif;*/
 /*font-family: 'Oswald', sans-serif;*/
 
@@ -83,11 +83,11 @@ label,
 
 	z-index: 1;
 
-	background: url(/gif-bg.gif) rgba(1, 1, 1, 0.1) no-repeat;
+	/*background: url(gif-bg.gif) rgba(1, 1, 1, 0.1) no-repeat;*/
 	background-size: cover;
 
-	-webkit-filter: blur(10px);
-	filter: blur(10px);
+	/*-webkit-filter: blur(10px);
+	filter: blur(10px);*/
 
 	top: 0;
 	left: 0;
