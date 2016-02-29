@@ -1,5 +1,3 @@
-console.log('\'Allo \'Allo!');
-
 $(function(){
-  $(".player").YTPlayer();
+  $('.player').YTPlayer();
 });
