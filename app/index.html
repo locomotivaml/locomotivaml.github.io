@@ -12,6 +12,7 @@
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/reset-css/reset.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -34,17 +35,16 @@
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+    <!-- <a href="/" class="logo"><img src="images/logo.png" alt="LOCOMOTIVA"></a> -->
 
-    <div class="splash-container">
-      <div class="splash-background"></div>
-      <div class="splash">
-        <a href="/" class="logo"><img src="images/logo.png" alt="LOCOMOTIVA"></a>
-        <h1 class="splash-head">Experienced agile developers that designs, develop & grow your products and ideas</h1>
-        <p class="splash-subhead">
+    <section class="hero first-section player" data-property="{ videoURL: 'http://youtu.be/1dgLEDdFddk', containment: 'self',autoPlay: true, mute: true, startAt: 7, opacity: 1, showControls: false, showYTLogo: false, loop: true }">
+      <div class="hero-content">
+        <h1 class="title">Experienced agile developers that designs, develop & grow your products and ideas</h1>
+        <h2 class="subtitle">
           We're here to help you small business owners, startups, organizations, brands build and deliver better software, focusing on user outcomes & simplicity, we minimize risk and increase your product's success with quality code & quality humans.
-        </p>
+        </h2>
       </div>
-    </div>
+    </section>
 
     <div class="content-wrapper">
       <div class="content about">
@@ -66,16 +66,16 @@
         </div>
 
         <div class="pure-u-1-4 pure-u-md-1-2 client">
-          <a href="https://lefooding.com"><img src="images/lefooding.png" alt="" class="pure-img-responsive"></a>
+          <a href="https://lefooding.com"><img src="images/lefooding.png" alt="" class="img-responsive"></a>
         </div>
         <div class="pure-u-1-4 pure-u-md-1-2 client">
-          <a href="https://encontreumnerd.com.br"><img src="images/eun.png" alt="" class="pure-img-responsive"></a>
+          <a href="https://encontreumnerd.com.br"><img src="images/eun.png" alt="" class="img-responsive"></a>
         </div>
         <div class="pure-u-1-4 pure-u-md-1-2 client">
-          <a href="https://gatonobre.com.br"><img src="images/gatonobre.png" alt="" class="pure-img-responsive"></a>
+          <a href="https://gatonobre.com.br"><img src="images/gatonobre.png" alt="" class="img-responsive"></a>
         </div>
         <div class="pure-u-1-4 pure-u-md-1-2 client">
-          <a href="javascript:void;"><img src="images/lets.png" alt="" class="pure-img-responsive"></a>
+          <a href="javascript:void;"><img src="images/lets.png" alt="" class="img-responsive"></a>
         </div>
       </div>
 
@@ -114,6 +114,7 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
