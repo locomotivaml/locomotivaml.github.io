@@ -1,6 +1,6 @@
 # [locomotiva website](http://locomotiva.ml)
 
-[![Build Status](https://img.shields.io/travis/locomotivaml/locomotivaml.github.io/master.svg)](https://travis-ci.org/locomotivaml/locomotivaml.github.io)
+[![Build Status](https://travis-ci.org/locomotivaml/locomotivaml.github.io.svg?branch=master)](https://travis-ci.org/locomotivaml/locomotivaml.github.io)
 
 This is the main repository for locomotiva's website.
 
