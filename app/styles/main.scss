@@ -58,28 +58,30 @@ header.header {
   // -webkit-filter: blur(10px);
 }
 
+.content {
+  .title {
+    font: 700 30px/100% 'Oswald' !important;
+    margin-bottom: 40px;
+    color: white;
+    text-shadow: 0px 1px 1px #000,0px 1px 1px #000;
+
+    // TABLETS (AND UP)
+    @media (min-width: 48em) {
+      font-size: 50px !important;
+    }
+  }
+}
+
 .first-section {
   min-height: 90vh;
   background: #666;
 
-  .hero-content {
+  .content {
     font-family: 'Oswald', serif;
     text-transform: uppercase;
     flex: none;
     max-width: 80%;
     text-align: center;
-
-    .title {
-      font: 700 30px/100% 'Oswald' !important;
-      margin-bottom: 40px;
-      color: white;
-      text-shadow: 0px 1px 1px #000,0px 1px 1px #000;
-
-      // TABLETS (AND UP)
-      @media (min-width: 48em) {
-        font-size: 50px !important;
-      }
-    }
 
     .subtitle {
       font: 400 18px/150% 'Quattrocento';
@@ -94,28 +96,74 @@ header.header {
   background: #111;
   color: white;
 
-  .hero-content {
+  .content {
     flex: none;
     max-width: 80%;
     text-align: left;
 
     text-transform: uppercase;
 
-    .title {
-      font: 700 30px/100% 'Oswald' !important;
-      margin-bottom: 40px;
-      color: white;
-      text-shadow: 0px 1px 1px #000,0px 1px 1px #000;
+    p {
+      text-align: justify;
+      font: 18px/200% 'Quattrocento';
+      letter-spacing: 0px;
+    }
+  }
+}
 
-      // TABLETS (AND UP)
-      @media (min-width: 48em) {
-        font-size: 50px !important;
-      }
+.clients-section {
+  min-height: 60vh;
+
+  .content {
+    flex: none;
+    width: 80%;
+
+    .title {
+      color: black;
+      text-shadow: 0px 1px 1px #000,0px 1px 1px #000;
+      text-transform: uppercase;
     }
 
-    .client {
+    .clients-list {
+      div {
+        text-align: center;
+      }
+
       img { max-width: 140px; }
     }
+  }
+}
 
+.contact-section {
+  min-height: 40vh;
+  background-color: #111;
+
+  .content {
+    flex: none;
+    width: 80%;
+
+    .title {
+      text-shadow: 0px 1px 1px #000,0px 1px 1px #000;
+      text-transform: uppercase;
+    }
+
+    .contact-list > li {
+      font-weight: 700;
+      list-style: none;
+      padding: 0;
+      margin: 10px 0;
+
+      > a {
+        text-decoration: none;
+        border-bottom: 1px solid #7f8c8d;
+        color: #7f8c8d;
+        font-family: 'Quattrocento', sans-serif;
+
+        &:hover {
+          color: #333;
+          border-bottom: 1px solid #111;
+        }
+      }
+    }
   }
 }
