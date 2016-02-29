@@ -91,6 +91,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-processhtml');
   grunt.loadNpmTasks('grunt-contrib-htmlmin');
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
 
   // Default task.
   // grunt.registerTask ('deploy', ['gh-pages']);
