@@ -4,5 +4,5 @@ git:
 node_js:
   - "0.12"
 install:
-  - npm install -g gulp
+  - npm install -g gulp bower-cli
   - bower install
