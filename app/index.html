@@ -32,16 +32,48 @@
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
   </head>
-  <body>
+   <!-- data-offset="40" -->
+  <body data-spy="scroll" data-target="#navbar-main">
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <header class="header is-fixed">
-      <a href="/" class="logo"><img src="images/logo.png" alt="LOCOMOTIVA"></a>
-    </header>
+    <nav id="navbar-main" class="navbar navbar-fixed-top navbar-dark">
+      <div class="container">
+        <button class="navbar-toggler hidden-sm-up" style="float:right;" type="button" data-toggle="collapse" data-target="#navigation-menu">
+          &#9776;
+        </button>
+        <a href="/" class="navbar-center navbar-brand">
+          <img src="images/logo-white.png" alt="locomotiva.ml" class="logo-white">
+          <img src="images/logo.png" alt="locomotiva.ml" class="logo-dark">
+        </a>
+        <div class="collapse navbar-toggleable-xs" id="navigation-menu">
+          <ul class="nav navbar-nav pull-xs-right">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home <span class="sr-only">(atual)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#clients">Clients</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-    <section class="hero first-section player flex-center" data-property="{ videoURL: 'http://youtu.be/1dgLEDdFddk', containment: 'self',autoPlay: true, mute: true, startAt: 7, opacity: 1, showControls: false, showYTLogo: false, loop: true }">
+    <!-- <header class="header is-fixed">
+      <a href="/" class="logo"><img src="images/logo.png" alt="LOCOMOTIVA"></a>
+    </header> -->
+
+    <section class="hero first-section player flex-center" data-property="{ videoURL: 'http://youtu.be/1dgLEDdFddk', containment: 'self',autoPlay: true, mute: true, startAt: 7, opacity: 1, showControls: false, showYTLogo: false, loop: true }" id="home">
       <div class="content">
         <h1 class="title">Experienced agile developers that designs, develop & grow your products and ideas</h1>
         <h2 class="subtitle">
@@ -50,7 +82,7 @@
       </div>
     </section>
 
-    <section class="about-section flex-center">
+    <section class="about-section flex-center" id="about">
       <div class="content">
         <h2 class="title">About us</h2>
 
@@ -68,7 +100,7 @@
       </div>
     </section> -->
 
-    <section class="clients-section flex-center">
+    <section class="clients-section flex-center" id="clients">
       <div class="content">
         <h2 class="title">Our Clients</h2>
 
@@ -85,11 +117,12 @@
           <div class="col-md-3">
             <a href="https://atualizecar.com.br"><img src="images/atualizecar.png" alt="" class="img-responsive"></a>
           </div>
+          <!-- aceleratech -->
         </div>
       </div>
     </section>
 
-    <section class="contact-section flex-center">
+    <section class="contact-section flex-center" id="contact">
       <div class="content">
         <h2 class="title">Contact</h2>
 
@@ -118,6 +151,8 @@
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <script src="/bower_components/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js"></script>
+    <script src="/bower_components/tether/dist/js/tether.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 

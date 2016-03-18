@@ -6,6 +6,8 @@
     "modernizr": "~2.8.1",
     "reset-css": "^2.0.2011012603",
     "jquery.mb.ytplayer": "^2.9.14",
-    "flexboxgrid": "^6.3.0"
+    "flexboxgrid": "^6.3.0",
+    "bootstrap": "v4.0.0-alpha.2",
+    "tether": "^1.2.0"
   }
 }
